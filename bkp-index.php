@@ -1,60 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<?php include "includes/head.php"; ?>
 
-	<meta charset="utf-8">
 
-	<!-- Template site title
-   ================================================== -->
-	<title>Adventure Bootstrap Theme by tooplate</title>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-<!--
-
-Template 2078 Adventure
-
-http://www.tooplate.com/view/2078-adventure
-
--->
-	<!-- Bootstrap CSS
-   ================================================== -->
-	<link rel="stylesheet" href="style/css/bootstrap.min.css">
-
-	<!-- Animate CSS
-   ================================================== -->
-	<link rel="stylesheet" href="style/css/animate.min.css">
-
-	<!-- Font Icons
-   ================================================== -->
-	<link rel="stylesheet" href="style/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style/css/et-line-font.css">
-
-	<!-- Nivo Lightbox CSS
-   ================================================== -->
-	<link rel="stylesheet" href="style/css/nivo-lightbox.css">
-	<link rel="stylesheet" href="style/css/nivo_themes/default/default.css">
-
-	<!-- Owl Carousel CSS
-   ================================================== -->
-   	<link rel="stylesheet" href="style/css/owl.theme.css">
-	<link rel="stylesheet" href="style/css/owl.carousel.css">
-
-	<!-- BxSlider CSS
-   ================================================== -->
-   	<link rel="stylesheet" href="style/css/bxslider.css">
-
-   	<!-- Main CSS
-   	================================================== -->
-	<link rel="stylesheet" href="style/css/style.css">
-
-	<!-- Google web font
-   ================================================== -->
-	<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
-	
-</head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -79,25 +26,68 @@ http://www.tooplate.com/view/2078-adventure
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#home" class="smoothScroll navbar-brand">ADVENTURE</a>
+			<a href="#home" class="smoothScroll navbar-brand">My Story</a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
             
-				<!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
-                
-				<li><a href="#work" class="smoothScroll">WORK</a></li>
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+                <!-- <li><a href="#work" class="smoothScroll">WORK</a></li> -->
 				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
-				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<!-- <li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#portfolio" class="smoothScroll">GALLERY</a></li>
-				<li><a href="#plan" class="smoothScroll">PLANS</a></li>
-				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+				<li><a href="#plan" class="smoothScroll">PLANS</a></li> -->
+				<!-- <li><a href="#contact" class="smoothScroll">CONTACT</a></li> -->
+				<li><a href="#" data-toggle="modal" class="modal-login" data-target="#LgModal"> LOGIN </a></li>
 			</ul>
 		</div>
 
 	</div>
 </section>
 
+<!-- Login Modal -->
+<div class="modal fade" id="LgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content add-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">login</h4>
+      </div>
+      <div class="modal-body">
+      
+		<form class="form-horizontal">
+		  <div class="form-group">
+		    <label for="inputEmail3"  class="col-sm-2 control-label">Email</label>
+		    <div class="col-sm-10">
+		      <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+		    <div class="col-sm-10">
+		      <input type="password" name="pass" class="form-control" id="inputPassword3" placeholder="Password">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10 font-Sign">
+		    <a href="signUp.php"><b>Don't have an account?</b></a>
+		    </div>
+		  </div>
+		
+
+      </div>
+      <div class="modal-footer">
+      <button type="submit" class="btn-save">Sign in</button>
+      <div class="btn-dismiss" data-dismiss="modal">Close</div>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
 
 <!-- Homepage section
 ================================================== -->
@@ -110,7 +100,7 @@ http://www.tooplate.com/view/2078-adventure
                     <div class="row">
                         <div class="col-md-12">
                             <div class="slider-caption">
-                                <h2>Plan your trip</h2>
+                                <h2>My Story</h2>
                                 <p class="color-white">Fusce elementum nisi et magna tristique, ut facilisis magna dapibus.</p>
                             </div>
                         </div>
@@ -171,11 +161,11 @@ http://www.tooplate.com/view/2078-adventure
                 <div class="row">
                     <div class="col-md-12">
                         <div id="bx-pager">
-                            <a data-slide-index="0" href=""><img src="style/images/slider/thumb1.jpg" alt="thumbnail 1" /></a>
-                            <a data-slide-index="1" href=""><img src="style/images/slider/thumb2.jpg" alt="thumbnail 2" /></a>
-                            <a data-slide-index="2" href=""><img src="style/images/slider/thumb3.jpg" alt="thumbnail 3" /></a>
-                            <a data-slide-index="3" href=""><img src="style/images/slider/thumb4.jpg" alt="thumbnail 4" /></a>
-                            <a data-slide-index="4" href=""><img src="style/images/slider/thumb5.jpg" alt="thumbnail 5" /></a>
+                            <a data-slide-index="0" href=""><img src="style/images/slider/thumb1.jpg" class="wow bounceIn" data-wow-delay="0.6s" alt="thumbnail 1" /></a>
+                            <a data-slide-index="1" href=""><img src="style/images/slider/thumb2.jpg" class="wow bounceIn" data-wow-delay="0.9s" alt="thumbnail 2" /></a>
+                            <a data-slide-index="2" href=""><img src="style/images/slider/thumb3.jpg" class="wow bounceIn" data-wow-delay="1s" alt="thumbnail 3" /></a>
+                            <a data-slide-index="3" href=""><img src="style/images/slider/thumb4.jpg" class="wow bounceIn" data-wow-delay="1.3s" alt="thumbnail 4" /></a>
+                            <a data-slide-index="4" href=""><img src="style/images/slider/thumb5.jpg" class="wow bounceIn" data-wow-delay="1.6s" alt="thumbnail 5" /></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +174,28 @@ http://www.tooplate.com/view/2078-adventure
     </div> <!-- /.site-slider -->
 </div>
 
-
+<!-- Info footer in frist look
+================================================== -->
+<!-- <section class=col-md-4></section> -->
+<!-- <section id="" class="col-md-4 first-footer"> -->
+	<!-- <div class=""> -->
+		<!-- <div class="container-fluid"> -->
+		<!-- <div id="owl-work" class="owl-carousel"> -->
+			<!-- <div class="row slider-1">
+				<div>
+				<p>Vegetable refined oil – Often known as hydrogenated oil. Oils such as canola oil or rapeseed oil, sunflower oil, safflower oil, ground oil, corn oil fall under the category of vegetable refined oil. Hydrogenated oils are extensively used in our daily cooking, as they are easily digested by the body and are termed as light weight oil. It is not advisable to reuse hydrogenated oils as they turn rancid very easily. Cooking in rancid oils leads to health problems like gastritis, diarrhoea, jaundice etc.</p></div>
+				<div>
+				<p>Nut oils– Oils like almond oil, walnut oil etc. are not used in large quantities as they are known as heavy oils. They are used in very minute quantities, either to add flavour or texture to the food. They are widely used in bakery products such as muffins, cinnamon rolls etc. in minute quantities. These oils should not be heated as they lose their nutrient value and are very dense in nature.</p></div>
+				<div>
+				<p>Seed oils – Oils like flaxseed oil, pumpkin seed oil, olive oil, soy oil falls in this category. Off late these oils are used in cooking due to their high nutritive value. These oils are the rich sources of omega 3 and omega 6 fatty acids and should not be heated, as they lose their nutrient value and becomes rancid. It is advisable to use such oils for salad dressings, making pasta, or some light cooking where the oil is not heated to above 100 degrees Celsius.</p></div>
+				</div> -->
+			<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+<!-- </section> -->
+<!-- <section class="col-md-4"></section> -->
+<!-- <div class="empty_space"></div> -->
 <!-- Work section
 ================================================== -->
 <section id="work" class="parallax-section">
@@ -193,19 +204,19 @@ http://www.tooplate.com/view/2078-adventure
 
 			<!-- Section title
 			================================================== -->
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-				<div class="section-title">
-					<h5 class="wow bounceIn">Adventure Studio</h5>
-					<h1 class="heading">WHAT WE DO</h1>
-					<hr>
+			<!-- <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8"> -->
+				<!-- <div class="section-title"> -->
+					<!-- <h5 class="wow bounceIn">Adventure Studio</h5> -->
+					<!-- <h1 class="heading">WHAT WE DO</h1> -->
+					<!-- <hr>
 					<p>Click on the adventure logo at the top to scroll up. Nullam a finibus dui. Nullam malesuada vitae odio et fringilla.</p>
 				</div>
-			</div>
+			</div> -->
 
 
 			<!-- Work Owl Carousel section
 			================================================== -->
-			<div id="owl-work" class="owl-carousel">
+<!-- 			<div id="owl-work" class="owl-carousel">
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 					<i class="icon-tools medium-icon"></i>
@@ -243,7 +254,7 @@ http://www.tooplate.com/view/2078-adventure
 				</div>
 
 			</div>
-
+ -->
 		</div>
 	</div>
 </section>
@@ -360,13 +371,13 @@ http://www.tooplate.com/view/2078-adventure
 
 <!-- team section
 ================================================== -->
-<section id="team" class="parallax-section">
+<!-- <section id="team" class="parallax-section">
 	<div class="container">
-		<div class="row">
+		<div class="row"> -->
 
 			<!-- Section title
 			================================================== -->
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+			<!-- <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">WE ARE READY</h5>
 					<h1 class="heading">OUR TEAM</h1>
@@ -425,18 +436,18 @@ http://www.tooplate.com/view/2078-adventure
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 <!-- Portfolio section
 ================================================== -->
-<section id="portfolio" class="parallax-section">
+<!-- <section id="portfolio" class="parallax-section">
 	<div class="container">
-		<div class="row">
+		<div class="row"> -->
 
 			<!-- Section title
 			================================================== -->
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+			<!-- <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">WE ARE DELIGENT</h5>
 					<h1 class="heading">SHOWCASE</h1>
@@ -527,11 +538,11 @@ http://www.tooplate.com/view/2078-adventure
 							</figcaption>			
 					</figure>
 				</div>
-            </div> 
+            </div>  -->
 
             <!-- Portfolio bottom section
 			================================================== -->
-            <div class="col-md-offset-2 col-md-8 col-sm-12">
+            <!-- <div class="col-md-offset-2 col-md-8 col-sm-12">
             	<div class="portfolio-bottom">
             		<h2>INTERESTED?</h2>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Lorem ipsum dolor sit 	amet.</p>
@@ -541,18 +552,18 @@ http://www.tooplate.com/view/2078-adventure
 
 		</div>
 	</div>
-</section>		
+</section>	 -->	
 
 
 <!-- Plan section
 ================================================== -->
-<section id="plan" class="parallax-section">
+<!-- <section id="plan" class="parallax-section">
 	<div class="container">
 		<div class="row">
-
+ -->
 			<!-- Section title
 			================================================== -->
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+			<!-- <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 				<div class="section-title">
 					<h5 class="wow bounceIn">UNIQUE ADVENTURES</h5>
 					<h1 class="heading color-white">TRIP PLANS</h1>
@@ -617,29 +628,29 @@ http://www.tooplate.com/view/2078-adventure
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 <!-- Contact section
 ================================================== -->
-<section id="contact" class="parallax-section">
+<!-- <section id="contact" class="parallax-section">
 	<div class="container">
-		<div class="row">
+		<div class="row"> -->
 
 			<!-- Section title
 			================================================== -->
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+			<!-- <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">PLAN YOUR TRIP</h5>
 					<h1 class="heading">CONTACT US</h1>
 					<hr>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla. Excepteu sunt in culpa qui officia deserunt mollit.</p>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Contact form section
 			================================================== -->
-			<div class="col-md-offset-1 col-md-10 col-sm-12">
+			<!-- <div class="col-md-offset-1 col-md-10 col-sm-12">
 				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
 					<div class="col-md-4 col-sm-6">
 						<input type="text" class="form-control" placeholder="Name" name="name">
@@ -657,11 +668,11 @@ http://www.tooplate.com/view/2078-adventure
 						<input type="submit" class="form-control" value="SHOOT MESSAGE">
 					</div>
 				</form>
-			</div>
+			</div> -->
 
 			<!-- Contact detail section
 			================================================== -->
-			<div class="contact-detail col-md-12 col-sm-12">
+			<!-- <div class="contact-detail col-md-12 col-sm-12">
 				<div class="col-md-6 col-sm-6">
 					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
 					<p>hello@company.com</p>
@@ -674,47 +685,8 @@ http://www.tooplate.com/view/2078-adventure
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
-<!-- Footer section
-================================================== -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
 
-				<h2 class="wow bounceIn">ADVENTURE STUDIO</h2>
-				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li>
-					<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="1.6s"></a></li>
-				</ul>
-				<p>Copyright &copy; 2016 Adventure Studio 
-                
-                | Design: <a rel="nofollow" href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
-
-			</div>
-		</div>
-	</div>
-</footer>
-
-
-<!-- Javascript 
-================================================== -->
-<script src="style/js/jquery.js"></script>
-<script src="style/js/bootstrap.min.js"></script>
-<script src="style/js/smoothscroll.js"></script>
-<script src="style/js/nivo-lightbox.min.js"></script>
-<script src="style/js/jquery.easing-1.3.js"></script>
-<script src="style/js/plugins.js"></script>
-<script src="style/js/owl.carousel.min.js"></script>
-<script src="style/js/jquery.parallax.js"></script>
-<script src="style/js/wow.min.js"></script>
-<script src="style/js/custom.js"></script>
-
-</body>
-</html>
+<?php include "includes/footer.php"; ?>

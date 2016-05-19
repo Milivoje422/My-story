@@ -97,3 +97,9 @@ $(document).ready(function() {
 
   });
 
+$(".slider-1 div:gt(0)" ).hide();
+
+setInterval(function(){
+    $('.slider-1 div:first').fadeOut(500).next().fadeIn(1000).end().appendTo('.slider-1');
+
+}, 3000);
