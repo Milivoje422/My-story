@@ -34,9 +34,10 @@
 			<ul class="nav navbar-nav navbar-right">
             
 				<li><a href="#home" class="smoothScroll">HOME</a></li>
-                <!-- <li><a href="#work" class="smoothScroll">WORK</a></li> -->
+                                <!-- <li><a href="#work" class="smoothScroll">WORK</a></li> -->
 				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
-				<!-- <li><a href="#team" class="smoothScroll">TEAM</a></li>
+				
+                                <!-- <li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#portfolio" class="smoothScroll">GALLERY</a></li>
 				<li><a href="#plan" class="smoothScroll">PLANS</a></li> -->
 				<!-- <li><a href="#contact" class="smoothScroll">CONTACT</a></li> -->

@@ -1,6 +1,9 @@
 <? /* SignUp */ ?>
 
-<?php include 'includes/head.php'; ?>
-<?php include 'includes/design.php'; ?>
+<?php 
 
-<?php include 'includes/footer.php'; ?>
+    include 'includes/head.php'; 
+    include_once 'includes/singUpview.php'; 
+    include 'includes/footer.php'; 
+
+?>

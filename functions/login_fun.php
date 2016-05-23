@@ -1,12 +1,12 @@
 <? /* Login */ ?>
 
 <?php  
-	require "load.php";
+include "load.php";
 
 if(isset($_POST['logIn'])){
 
-	$arr_name  	= array('name', 'password');
-	$arr_max        = array('username' =>20 ,'password' =>40);
+	$arr_names  	= array('name', 'password');
+	$arr_max        = array('name' =>20 ,'password' =>40);
 
 	$err1 = empty_fields($arr_names);
 	$err2 = max_fields($arr_max);

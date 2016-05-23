@@ -49,6 +49,7 @@ http://www.tooplate.com/view/2078-adventure
    	<!-- Main CSS
    	================================================== -->
 	<link rel="stylesheet" href="style/css/style.css">
+        <link rel="stylesheet" href="style/css/new_style.css">
 
 	<!-- Google web font
    ================================================== -->

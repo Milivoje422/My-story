@@ -20,9 +20,9 @@
 	}
 		
 
-	function confirm_query($result){
+	function confirm_query($result,$conn){
 		if(!$result){
-			die('Query to database failed!');
+			echo 'Query to database failed!' .mysqli_error($conn);
 		}
 	}
 
