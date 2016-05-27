@@ -20,9 +20,9 @@
 	}
 		
 
-	function confirm_query($result,$conn){
+	function confirm_query($result){
 		if(!$result){
-			echo 'Query to database failed!' .mysqli_error($conn);
+			echo 'Query to database failed!' .mysqli_error($result);
 		}
 	}
 
@@ -41,7 +41,7 @@
 
 	function get_users_query(){
 		global $conn;
-
+                
 		$query = "SELECT * FROM users";
 		$result = mysqli_query($conn,$query);
 		confirm_query($result);

@@ -12,7 +12,7 @@ if(isset($_POST['logIn'])){
 	$err2 = max_fields($arr_max);
 	$errors = array_merge($err1,$err2);
 
-	if(empty($errors)){
+	if(empty($errors) && !empty($_POST['name'])){
 
 	$name = mysqli_real_escape_string($conn,$_POST['name']);
 	$password = mysqli_real_escape_string($conn,$_POST['password']);
@@ -22,8 +22,9 @@ if(isset($_POST['logIn'])){
 		$row_db = mysqli_fetch_assoc($query);
 		if(password_verify($password,$row_db['user_pass'])){
 			$_SESSION['name'] = $name;
-			$_SESSION['user_id'] = $row_db['id'];
-			echo redirect('staff.php');
+			$_SESSION['user_id'] = $row_db['user_id'];
+                         setcookie($name, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
+			echo redirect('dashboard.php');
 		}
 	}
 	}
