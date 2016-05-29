@@ -846,3 +846,71 @@ footer h2 {
     font-size: 11px;
   }
 }
+.first-footer{
+  /*background-color: black;*/
+}
+.slider-1 div{
+  position: absolute;
+  /*background-color: black;*/
+}
+.empty_space{
+    width: 100%;
+    height: 70px;
+}
+.add-modal{
+  /*background-image: url("../images/about-bg.jpg");*/
+  /*display: block;*/
+}
+.btn-save{
+    float: right;
+    margin-right: 4px;
+    margin-left: 8px;
+    border: 1px solid #808080;
+    padding: 5px;
+    border-radius: 5px;
+    color: grey;
+    background-color: #1E160E;
+}
+.btn-dismiss{
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid #808080;
+    padding: 5px;
+    border-radius: 5px;
+    color: grey;
+   background-color: #1E160E;
+}
+.btn-save:hover{
+    color: aliceblue;
+    background-color: #1E160E;
+}
+.btn-dismiss:hover {
+    color: aliceblue;
+    background-color: #1E160E;
+}
+.btn-save:active{
+    color:aliceblue;
+    background-color: #808080;
+}
+.btn-dismiss:active{
+    color:aliceblue;
+    background-color: #808080;
+}
+.modal-body{
+  background-color: rgba(128, 128, 128, 0.2);
+  color: beige;
+}
+.modal-header{
+ background-color: rgba(128, 128, 128, 0.2);
+ color: beige;
+}
+.modal-footer{
+   background-color: rgba(128, 128, 128, 0.2);
+}
+.modal-dialog{
+  margin-top:7%;
+}
+.font-Sign b{
+      color: beige;
+}

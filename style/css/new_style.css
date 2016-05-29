@@ -1,0 +1,16 @@
+.singUp_box .form-control{
+    /*float: left;*/
+}
+.singUp_box{
+ background: #f9f9f9;
+}
+.form-horizontal .control-label{
+    text-align: left !important;
+}
+.empty_space{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+#title_status{
+    margin-button: 4%;
+}
