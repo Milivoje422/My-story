@@ -60,9 +60,9 @@
       
 		<form action="" method="post" class="form-horizontal">
 		  <div class="form-group">
-		    <label for="inputEmail3"  class="col-sm-2 control-label">Name</label>
+		    <label for="inputEmail3"  class="col-sm-2 control-label">Username</label>
 		    <div class="col-sm-10">
-		      <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="Name">
+		      <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username">
 		    </div>
 		  </div>
 		  <div class="form-group">

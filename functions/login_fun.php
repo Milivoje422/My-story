@@ -5,25 +5,25 @@ include "load.php";
 
 if(isset($_POST['logIn'])){
 
-	$arr_names  	= array('name', 'password');
-	$arr_max        = array('name' =>20 ,'password' =>40);
+	$arr_names  	= array('username', 'password');
+	$arr_max        = array('username' =>20 ,'password' =>40);
 
 	$err1 = empty_fields($arr_names);
 	$err2 = max_fields($arr_max);
 	$errors = array_merge($err1,$err2);
 
-	if(empty($errors) && !empty($_POST['name'])){
+	if(empty($errors) && !empty($_POST['username'])){
 
-	$name = mysqli_real_escape_string($conn,$_POST['name']);
+	$username = mysqli_real_escape_string($conn,$_POST['username']);
 	$password = mysqli_real_escape_string($conn,$_POST['password']);
 
-	$query = make_query("SELECT * FROM users WHERE user_name = '$name'");
+	$query = make_query("SELECT * FROM users WHERE username = '$username'");
 	if(mysqli_num_rows($query)==1){
 		$row_db = mysqli_fetch_assoc($query);
 		if(password_verify($password,$row_db['user_pass'])){
-			$_SESSION['name'] = $name;
+			$_SESSION['username'] = $username;
 			$_SESSION['user_id'] = $row_db['user_id'];
-                         setcookie($name, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
+                         setcookie($username, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
 			echo redirect('dashboard.php');
 		}
 	}

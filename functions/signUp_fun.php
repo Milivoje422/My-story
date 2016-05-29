@@ -19,6 +19,7 @@ if(isset($_POST['signUp_submit'])){
                        
 
 		$name       =  mysqli_real_escape_string($conn,$_POST['name']);
+                $username   =  mysqli_real_escape_string($conn,$_POST['username']);
                 $lastname   =  mysqli_real_escape_string($conn,$_POST['lastname']);
                 $email      =  mysqli_real_escape_string($conn,$_POST['email']);
                 $pass       =  mysqli_real_escape_string($conn,$_POST['pass']);
@@ -35,6 +36,7 @@ if(isset($_POST['signUp_submit'])){
 		$hash_pass = password_hash($pass,PASSWORD_DEFAULT);
 		
 		$query="INSERT INTO users SET 
+                username        =       '$username',
 		user_name	=       '$name',
 		user_lastname   =	'$lastname',
                 user_email      =       '$email',
@@ -43,19 +45,19 @@ if(isset($_POST['signUp_submit'])){
                 
 //                if(move_uploaded_file($old_location,$new_location)){
 //                $query.=" , user_image = '$new_location' ";}
-                $result =   mysqli_query($conn,$query);
+                $result = mysqli_query($conn,$query);
 		confirm_query($result,$conn);
 
                 
-                $query1="SELECT * FROM users WHERE user_name='$name'";
+                $query1="SELECT * FROM users WHERE username='$username'";
                 $result1=mysqli_query($conn,$query1);
                 confirm_query($result1,$conn);
                 
                 $row_db=mysqli_fetch_assoc($result1);
 		if(password_verify($pass,$row_db['user_pass'])){
-			$_SESSION['name']	=   $name;
+			$_SESSION['username']	=   $username;
 			$_SESSION['user_id']    =   $row_db['user_id'];      
-                        setcookie($name, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
+                        setcookie($name,$username, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
                     echo redirect("dashboard.php");
                     
             $message='You are create account . Your username is:'.$name;

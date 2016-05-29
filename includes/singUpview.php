@@ -12,7 +12,13 @@
             <div class="singUp_box" id="singUp">
                 <div class="col-lg-12 col-sm-12 col-mg-12">
                   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="form-horizontal" >
-                    <div class="form-group wow fadeIn" data-wow-delay="0.3s">
+                    <div class="form-group wow fadeIn" data-wow-delay="0.1s">
+                      <label for="inputName" class="col-sm-2 control-label">UserName:</label>
+                      <div class="col-sm-10">
+                       <input type="text" class="form-control" value="" name="username" id="inputEmail3" placeholder="UserName">
+                      </div>
+                    </div>
+                      <div class="form-group wow fadeIn" data-wow-delay="0.3s">
                       <label for="inputName" class="col-sm-2 control-label">Name:</label>
                       <div class="col-sm-10">
                        <input type="text" class="form-control" value="" name="name" id="inputEmail3" placeholder="Name">

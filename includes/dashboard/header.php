@@ -15,5 +15,8 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Custom css -->
+    <link href="includes/dashboard/style.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
+    
