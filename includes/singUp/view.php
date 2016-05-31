@@ -1,5 +1,7 @@
 <?  /* design Page  */ ?>
-<?php require_once 'functions/signUp_fun.php'; ?>
+<?php 
+include 'includes/singUp/header.php';
+require_once 'functions/signUp_fun.php'; ?>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
     <div class="empty_space"></div>
     <div class="form-group">
@@ -59,3 +61,5 @@
         </div>
     </div>
 </body> 
+
+<?php include 'includes/signUp/footer.php' ?> 
