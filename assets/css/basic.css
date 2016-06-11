@@ -44,7 +44,7 @@ body {
     color: #000;
     font-weight: 800;
     padding-bottom: 20px;
-    border-bottom: 2px solid #00CA79;
+    border-bottom: 2px solid #ffa400;
     margin-bottom: 10px;
 }
 
@@ -108,7 +108,7 @@ body {
     }
 
 .active-menu {
-    background-color: #00CA79!important;
+    background-color: #ffa400!important;
 }
 .active-menu-top {
     background-color: #000!important;

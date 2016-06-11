@@ -1,2 +1,6 @@
-<?php include 'includes/dashboard/view.php'; ?> 
+<?php include 'includes/dashboard/view.php';
+    
+
+
+?> 
 

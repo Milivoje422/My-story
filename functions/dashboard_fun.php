@@ -1,5 +1,4 @@
-<?php require 'load.php'; ?>
-<?php 
+<?php require 'load.php';  
 
 if(isset($_SESSION['user_id'])){
     $user_id = $_SESSION['user_id'];

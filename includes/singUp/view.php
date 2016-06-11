@@ -62,4 +62,4 @@ require_once 'functions/signUp_fun.php'; ?>
     </div>
 </body> 
 
-<?php include 'includes/signUp/footer.php' ?> 
+<?php include 'footer.php' ?> 

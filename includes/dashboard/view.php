@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <!-- /. ROW  -->
-                <div class="row">
+<!--                <div class="row">
                     <div class="col-md-4">
                         <div class="main-box mb-red">
                             <a href="#">
@@ -36,10 +36,10 @@
                         </div>
                     </div>
 
-                </div>
+                </div>-->
                 <!-- /. ROW  -->
 
-                <div class="row">
+<!--                <div class="row">
                     <div class="col-md-8">
                         <div class="row">
                             <div class="col-md-12">
@@ -80,20 +80,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--INDICATORS-->
+                                    INDICATORS
                                     <ol class="carousel-indicators">
                                         <li data-target="#reviews" data-slide-to="0" class="active"></li>
                                         <li data-target="#reviews" data-slide-to="1"></li>
                                         <li data-target="#reviews" data-slide-to="2"></li>
                                     </ol>
-                                    <!--PREVIUS-NEXT BUTTONS-->
+                                    PREVIUS-NEXT BUTTONS
 
                                 </div>
 
                             </div>
 
                         </div>
-                        <!-- /. ROW  -->
+                         /. ROW  
                         <hr />
 
                         <div class="panel panel-default">
@@ -115,13 +115,13 @@
 
                                     </div>
                                 </div>
-                                <!--INDICATORS-->
+                                INDICATORS
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel-example" data-slide-to="1"></li>
                                     <li data-target="#carousel-example" data-slide-to="2"></li>
                                 </ol>
-                                <!--PREVIUS-NEXT BUTTONS-->
+                                PREVIUS-NEXT BUTTONS
                                 <a class="left carousel-control" href="#carousel-example" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
                                 </a>
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.REVIEWS &  SLIDESHOW  -->
+                     /.REVIEWS &  SLIDESHOW  
                     <div class="col-md-4">
 
                         <div class="panel panel-default">
@@ -180,12 +180,12 @@
 
 
                     </div>
-                    <!--/.Chat Panel End-->
-                </div>
+                    /.Chat Panel End
+                </div>-->
                 <!-- /. ROW  -->
 
 
-                <div class="row">
+<!--                <div class="row">
 
                     <div class="col-md-8">
                         <div class="list-group">
@@ -200,7 +200,7 @@
                             </a>
                         </div>
                         <br />
-                        <!-- 16:9 aspect ratio -->
+                         16:9 aspect ratio 
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
                         </div>
@@ -261,15 +261,15 @@
                                     </span>
                                     </a>
                                 </div>
-                                <!-- /.list-group -->
+                                 /.list-group 
                                 <a href="#" class="btn btn-info btn-block">View All Alerts</a>
                             </div>
 
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!--/.Row-->
-                <hr />
+                <!--<hr />-->
 <!--                <div class="row">
 
                     <div class="col-md-8">
@@ -409,8 +409,8 @@
                     </div>
                 </div>-->
                 <!--/.Row-->
-                <hr />
-                <div class="row" style="padding-bottom: 100px;">
+                <!--<hr />-->
+<!--                <div class="row" style="padding-bottom: 100px;">
                     <div class="col-md-6">
                         <div id="comments-sec">
                             <h4><strong>Compose Support Ticket </strong></h4>
@@ -457,7 +457,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!--/.ROW-->
 
             </div>

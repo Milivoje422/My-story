@@ -13,8 +13,8 @@
                 <!-- /. ROW  -->
               
              
-            <div class="col-md-4">
-                
+            <div class="col-md-6">
+                <div class="col-md-10">
             
                 <div class="form-group">
                       <label for="exampleInputEmail1">Username</label>
@@ -36,233 +36,145 @@
                       <label for="exampleInputPassword1">Password</label>
                       <input type="Text" class="form-control" value="" id="exampleInputPassword1" placeholder="Password">
                 </div>                
-            </div>
 
-                <div class="col-md-4">                    
-                     <div class="form-group">
-                         <img src="assets/img/avatar.jpeg" class="img-thumbnail " id="news_image" alt="your image" style="height: 100px; width: 100px;" border-radius="5px"  name="image"/>
-                            <label for="image">Select image</label>
-                            <input type="file" class="form_control" name="image" id="src">
-                                <script type="text/javascript">
-                                        function showImage(src,target) {
-                                                var fr=new FileReader();
-                                                // when image is loaded, set the src of the image where you want to display it
-                                                fr.onload = function(e) { target.src = this.result; };
-                                                src.addEventListener("change",function() {
-                                                  // fill fr with image data    
-                                                  fr.readAsDataURL(src.files[0]);
-                                                });
-                                              }
-
-                                              var src = document.getElementById("src");
-                                              var target = document.getElementById("news_image");
-                                              showImage(src,target);
-                            
-                                </script>
-                     </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Country</label>
+                      <form class="form-inline">                     
+                          <select id="lunchBegins" class="selectpicker form-control" data-live-search="true"  data-live-search-style="begins" title="Please select country ...">
+                            <?php $query = make_query("SELECT * FROM countries");  
+                              foreach($query as $key => $result){ 
+                              echo '<option id="'.$key.'">'.$result['country_name'].'</option>';
+                              }
+                            ?>
+                          </select>
+                      </form>
+                </div> 
                     
-<!--                        <div class="form-group">
-                      <label for="exampleInputFile">File input</label>
-                      <input type="file" id="exampleInputFile">
-                      <p class="help-block">Example block-level help text here.</p>
-                    </div>-->
-<!--                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Check me out
-                      </label>
-                    </div>-->
-                    <!--<button type="submit" class="btn btn-default">Submit</button>-->
-                        
-                </div>
-
+                    
+                <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="Text" class="form-control" value="" id="exampleInputPassword1" placeholder="Password">
+                </div> 
+                    
+                <div class="Img-box">
+                         <div class="col-md-4">
+                         </div>
+                         <div class="col-md-4 m-s-t">
+                         <img src="assets/img/avatar.jpeg" class="img-thumbnail " id="news_image" alt="your image" style="height: 100px; width: 100px;" border-radius="5px"  name="image"/>
+                         <?php //$result[''];  ?>
+                         
+                            <label for="image"></label></div>
+                         <div class="col-md-4"></div>
+                         </br>   
+     
+                            <div class="col-md-12 m-s-t">
+                                <input type="file" id="files" name="file" />
+                                <div id="progress_bar"><div class="percent">0%</div></div>
+                            </div>
+                     </div>
+<script type="text/javascript">
                 
-                
-<!--            <div class="row">
-                <div class="col-md-6">
-                     Kitchen Sink 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Kitchen Sink
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                      End  Kitchen Sink 
-                </div>
-                <div class="col-md-6">
-                        Basic Table  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Basic Table
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                       End  Basic Table  
-                </div>
-            </div>
-                 /. ROW  
-            <div class="row">
-                <div class="col-md-6">
-                          Striped Rows Table  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Striped Rows Table
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                      End  Striped Rows Table  
-                </div>-->
-<!--                <div class="col-md-6">
-                        Bordered Table  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bordered Table
-                        </div>
-                         /.panel-heading 
-                        <div class="panel-body">
-                            <div class="table-responsive table-bordered">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                       End  Bordered Table  
-                </div>-->
-            </div>
-                <!-- /. ROW  -->
+            function showImage(src,target) {
+                var fr=new FileReader();
+                    // when image is loaded, set the src of the image where you want to display it
+              fr.onload = function(e) { target.src = this.result; };
+              src.addEventListener("change",function() {
+                    // fill fr with image data    
+                fr.readAsDataURL(src.files[0]);
+              });
+            }
 
-                <!-- /. ROW  -->
+            var src = document.getElementById("files");
+            var target = document.getElementById("news_image");
+            showImage(src,target);
+                                              
+            var reader;
+            var progress = document.querySelector('.percent');
 
-            </div>
-            <!-- /. PAGE INNER  -->
+            function abortRead() {
+              reader.abort();
+            }
+
+            function errorHandler(evt) {
+              switch(evt.target.error.code) {
+                case evt.target.error.NOT_FOUND_ERR:
+                 alert('File Not Found!');
+                 break;
+              case evt.target.error.NOT_READABLE_ERR:
+                 alert('File is not readable');
+                 break;
+              case evt.target.error.ABORT_ERR:
+                break; // noop
+                default:
+                alert('An error occurred reading this file.');
+              };
+            }
+
+            function updateProgress(evt) {
+                      // evt is an ProgressEvent.
+              if (evt.lengthComputable) {
+                    var percentLoaded = Math.round((evt.loaded / evt.total) * 100);
+                      // Increase the progress bar length.
+                if (percentLoaded < 100) {
+                    progress.style.width = percentLoaded + '%';
+                    progress.textContent = percentLoaded + '%';
+                }
+              }
+            }
+
+        function handleFileSelect(evt) {
+              // Reset progress indicator on new file selection.
+            progress.style.width = '0%';
+            progress.textContent = '0%';
+
+            reader = new FileReader();
+            reader.onerror = errorHandler;
+            reader.onprogress = updateProgress;
+            reader.onabort = function(e) {
+              alert('File read cancelled');
+                };
+            reader.onloadstart = function(e) {
+            document.getElementById('progress_bar').className = 'loading';
+                };
+            reader.onload = function(e) {
+              // Ensure that the progress bar displays 100% at the end.
+            progress.style.width = '100%';
+            progress.textContent = '100%';
+            setTimeout("document.getElementById('progress_bar').className='';", 2000);
+                }
+
+              // Read in the image file as a binary string.
+            reader.readAsBinaryString(evt.target.files[0]);
+                }
+
+            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+                                             
+</script>
         </div>
-        <!-- /. PAGE WRAPPER  -->
     </div>
+    <div class="col-md-6">
+        <div class="col-md-10">
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+              </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+                
+
+                
+         
+        </div>
+      </div>
+    </div>
+  </div>
 
 <?php include 'footer.php'; ?>

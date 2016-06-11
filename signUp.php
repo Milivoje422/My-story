@@ -1,5 +1,5 @@
 <? /* SignUp */ ?>
 
 <?php 
-    include_once 'includes/singUpview.php'; 
+    include_once 'includes/singUp/view.php'; 
 ?>
