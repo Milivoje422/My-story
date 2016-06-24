@@ -58,11 +58,14 @@ if(isset($_POST['signUp_submit'])){
 			$_SESSION['username']	=   $username;
 			$_SESSION['user_id']    =   $row_db['user_id'];      
                         setcookie($name,$username, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
-                    echo redirect("dashboard.php");
                     
-            $message='You are create account . Your username is:'.$name;
-            mail($email,'Magazine Notification',$message);
+                    
+//            $message='You are create account . Your username is:'.$name;
+//            mail($email,'Magazine Notification',$message);
                 
+            echo redirect("dashboard.php");
+            
+            
                 
                 }
             }

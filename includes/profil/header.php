@@ -6,29 +6,38 @@
     <title>My Story</title>
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-       <!--CUSTOM BASIC STYLES-->
-    <link href="assets/css/basic.css" rel="stylesheet" />
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+        <link href="assets/css/basic.css" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <!-- Custom css -->
-    <link href="style.css" rel="stylesheet" type="text/css"> 
+        <link href="includes/profil/style.css" rel="stylesheet" type="text/css"> 
 
-	<!-- Animate CSS
+    <!-- Animate CSS
    ================================================== -->
 	<link rel="stylesheet" href="style/css/animate.min.css">
 
-	<!-- Font Icons
+    <!-- Font Icons
    ================================================== -->
 	<link rel="stylesheet" href="style/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/css/et-line-font.css">
 
+            
+    <!--Loaded files for select boxes, they have awesome staff-->            
+        <link rel="stylesheet" href="dist/css/bootstrap-select.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="dist/js/bootstrap-select.js"></script>
 
-        
+    <!-- Custom css style -->
+        <link rel="stylesheet" href="includes/profil/style.css" type="text/css">
+            
+
         
         
 </head>
@@ -40,7 +49,7 @@
     $user_info = mysqli_fetch_assoc($result);
 ?>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top top-navbar" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-cls-top top-navbar custom-nav-bar" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -48,13 +57,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">My Story</a>
+                <a class="navbar-brand custom-nav-bar" href="index.html">My Story</a>
             </div>
 
             <div class="header-right">
 
-                <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
-                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
+                <a href="message-task.html" class="btn custom-new-design-btn" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn custom-new-design-btn" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
 <!--                <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>-->
 
             </div>

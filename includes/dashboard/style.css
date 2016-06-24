@@ -5,3 +5,12 @@
     background-color: #202020 !important;
         border-top: 1px #868686 solid;
 }
+.custom-new-design-btn{
+    color:white;
+    background-color: #ffa400;
+    border-color: #ffa400;
+}
+
+.custom-nav-bar{
+        background: #000000 !important;
+}

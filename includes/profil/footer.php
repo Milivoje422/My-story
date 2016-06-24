@@ -1,4 +1,3 @@
-
     <div id="footer-sec" class="back_color">
 <!--        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>-->
     <div class="width-space"></div>
@@ -18,7 +17,7 @@
 
 <!-- Javascript 
 ================================================== -->
-<script src="style/js/jquery.js"></script>
+<!--<script src="style/js/jquery.js"></script>-->
 <script src="style/js/bootstrap.min.js"></script>
 <script src="style/js/smoothscroll.js"></script>
 <script src="style/js/nivo-lightbox.min.js"></script>
@@ -28,6 +27,7 @@
 <script src="style/js/jquery.parallax.js"></script>
 <script src="style/js/wow.min.js"></script>
 <script src="style/js/custom.js"></script>
+<script src="assets/js/jquery-3.0.0.js"></script>
 
 </body>
 </html>

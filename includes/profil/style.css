@@ -1,1 +1,34 @@
+.custom-new-design-btn{
+    color:white;
+    background-color: #ffa400;
+    border-color: #ffa400;
+}
 
+.custom-nav-bar{
+    background: #000000 !important;
+}
+.Img-box{
+    border:1px dashed #ffa400; 
+    width: 100%;
+    height: 210px; 
+    border-radius: 5px;
+}
+ #progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+   -webkit-transition: opacity 1s linear;
+    }
+ #progress_bar.loading {
+    opacity: 1.0;
+    }
+ #progress_bar .percent {
+    background-color: #b37c00;
+    height: auto;
+    width: 0;
+    }

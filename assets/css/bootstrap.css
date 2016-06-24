@@ -6201,3 +6201,79 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/*    Margin litle framework for easy use*/
+
+    /*Small margin*/
+.m-s{
+    margin:10px;
+}
+.m-s-l{
+    margin-left: 10px;
+}
+.m-s-r{
+    margin-right: 10px;
+}
+.m-s-t{
+    margin-top: 10px;
+}
+.m-s-b{
+    margin-bottom: 10px;
+}
+
+    /*Medium margin*/
+.m-m{
+    margin:20px;
+}
+.m-m-l{
+    margin-left: 20px;
+}
+.m-m-r{
+    margin-right: 20px;
+}
+.m-m-t{
+    margin-top: 20px;
+}
+.m-m-b{
+    margin-bottom: 20px;
+}
+
+    /*Large margin*/
+.m-l{
+    margin: 30px;
+}
+.m-l-l{
+    margin-left: 30px;
+}
+.m-l-r{
+    margin-right: 30px;
+}
+.m-l-t{
+    margin-top: 30px;
+}
+.m-l-b{
+    margin-bottom: 30px;
+}
+    /*end margin*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
