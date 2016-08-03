@@ -23,7 +23,7 @@ if(isset($_POST['logIn'])){
 		if(password_verify($password,$row_db['user_pass'])){
 			$_SESSION['username'] = $username;
 			$_SESSION['user_id'] = $row_db['user_id'];
-                         setcookie($username, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
+                setcookie($username, $row_db['user_id'], time() + (86400 * 30), "/"); // 86400 = 1 day
 			echo redirect('dashboard.php');
 		}
 	}

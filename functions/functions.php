@@ -32,7 +32,7 @@
 		$result = mysqli_query($conn,$query);
 		confirm_query($result);
 
-		if($result){
+		if(count($result) == 1){
 			return $result;
 		}else{
 			die('Query to database is wrong!');
