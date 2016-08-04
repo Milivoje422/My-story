@@ -26,7 +26,7 @@
 		}
 	}
 
-	public function make_query($query){
+	function make_query($query){
 		global $conn;
 
 		$result = mysqli_query($conn,$query);

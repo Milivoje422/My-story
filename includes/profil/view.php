@@ -73,6 +73,21 @@
                                 <div id="progress_bar"><div class="percent">0%</div></div>
                             </div>
                      </div>
+
+                   <!--  <div class="form-group">
+                      <label for="exampleInputFile">File input</label>
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                          <input type="checkbox"> Check me out
+                      </label>
+                    </div> -->
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+
 <script type="text/javascript">
                 
             function showImage(src,target) {
@@ -150,24 +165,12 @@
 
             document.getElementById('files').addEventListener('change', handleFileSelect, false);
                                              
-</script>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="col-md-10">
-              <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
+      </script>
               </div>
-              <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Check me out
-                </label>
-              </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-    </div>
+          </div>
+          <div class="col-md-6">
+        
+          </div>
                 
 
                 
